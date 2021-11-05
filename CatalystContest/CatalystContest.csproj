@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FileParser" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InputFilesToCopy Include="$(MSBuildThisFileDirectory)\Inputs\*.in" />
+  </ItemGroup>
+
+  <Target Name="CopyInputFilesToOutputDir" AfterTargets="Build">
+    <Copy SourceFiles="@(InputFilesToCopy)" DestinationFolder="$(OutputPath)\Inputs" />
+  </Target>
+
+  <ItemGroup>
+    <Compile Remove="Correct_Outputs\**" />
+    <Compile Remove="Inputs\**" />
+    <EmbeddedResource Remove="Correct_Outputs\**" />
+    <None Remove="Correct_Outputs\**" />
+    <!--<EmbeddedResource Remove="Inputs\**" />-->
+    <!--<None Remove="Inputs\**" />-->
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalystContest", "CatalystContest\CatalystContest.csproj", "{5D56838C-6520-4B43-8D07-E3FCD82ABA90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D56838C-6520-4B43-8D07-E3FCD82ABA90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D56838C-6520-4B43-8D07-E3FCD82ABA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D56838C-6520-4B43-8D07-E3FCD82ABA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D56838C-6520-4B43-8D07-E3FCD82ABA90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76E68B30-E2C2-45C2-9167-DC175B997D09}
+	EndGlobalSection
+EndGlobal
